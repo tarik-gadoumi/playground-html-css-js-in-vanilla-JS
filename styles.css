@@ -1,0 +1,30 @@
+body {
+    font-family: Roboto;
+  }
+  
+  .all-titles > h1 > a {
+    width: max-content;
+    height: 50px;
+    background-color: #e8a87c;
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .all-titles > h1 > a:hover {
+    color: #2e1114;
+    outline-offset: 2px;
+    outline: #41b3a3 3px solid;
+  }
+  #editor {
+    margin: 0 auto;
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }
+ 

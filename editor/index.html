@@ -1,0 +1,68 @@
+<html>
+  <title>HTML/CSS/JS Playground</title>
+  <link rel="stylesheet" href="./editor.styles.css" />
+  <link rel="stylesheet" href="../highlight/styles/a11y-dark.min.css" />
+
+  <body>
+    <style>
+      textarea {
+        background-color: black;
+        color: white;
+        width: 600px;
+        height: 350px;
+      }
+
+      iframe {
+        width: 400px;
+        height: 350px;
+      }
+    </style>
+    <div>
+      <h3>HTML/CSS/JS Playground</h3>
+      <div>
+        <div>
+          <ul>
+            <li><a href="#html"> HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JS</a></li>
+          </ul>
+          <div>
+            <p>
+              <textarea id="htmlTextarea"></textarea>
+            </p>
+
+            <p>
+              <textarea id="cssTextarea"></textarea>
+            </p>
+
+            <p>
+              <textarea id="jsTextarea"></textarea>
+            </p>
+          </div>
+        </div>
+        <div>
+          <button id="btn">dzdzd</button>
+          <div>
+            <iframe id="iFrame"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./editor.js"></script>
+    <script type="module">
+      const btn = document.getElementById('btn');
+      const js = document.getElementById('jsTextarea');
+
+      // window.onerror = function (event) {
+      //   console.log(event);
+      // };
+
+      btn.addEventListener('click', (ev) => {
+        window.reportError((e) => {
+          console.log(e);
+        });
+      });
+    </script>
+  </body>
+</html>
